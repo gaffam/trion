@@ -1,0 +1,8 @@
+librosa
+numpy
+soundfile
+tensorflow
+scipy
+streamlit
+crepe
+pytest
