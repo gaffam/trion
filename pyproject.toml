@@ -1,0 +1,28 @@
+[project]
+name = "trion-ai"
+version = "0.2.0"
+description = "Trion AI audio engineer"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "librosa",
+  "soundfile",
+  "scipy",
+  "gradio",
+  "matplotlib",
+  "loguru",
+]
+
+[project.scripts]
+trion = "trion.ui.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
